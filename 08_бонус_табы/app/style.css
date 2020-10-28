@@ -1,6 +1,22 @@
-.block {
-	width: 150px;
-	height: 150px;
-	background: bisque;
+.tabs {
+	border: 1px solid #666;
+	padding: 10px;
 	margin: 50px;
 }
+
+.active {
+	color: green;
+}
+
+ul {
+	padding-left: 0;
+}
+.tab {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #666;
+	padding: 5px 10px;
+}
+
+.tab:hover {
+	color: lightgreen;

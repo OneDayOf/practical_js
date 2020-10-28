@@ -1,29 +1,50 @@
-// document.querySelectorAll('.block').onclick = function() {
-// 	console.log('work');
+// function init() {
+// 	let tabBody = document.querySelectorAll('.tab-body');
+// 	for (let i = 1; i < tabBody.length; i++) {
+// 		tabBody[i].style.display = 'none';
+// 	}
 // }
 
-console.log(document.querySelectorAll('.block'));
+// init();
 
+// let tab = document.querySelectorAll('.tab');
 
-let blocks = document.querySelectorAll('.block');
-let blocks2 = document.getElementsByClassName('block');
+// tab.forEach(function(e) {
+// 	e.onclick = showTabs;
+// });
 
-console.log(blocks2)
-//Первый способ повесить событие на каждый элемент
-for (let i = 0; i < blocks.length; i++) {
-	blocks[i].onclick = one;
-}
-
-//Второй способ повесить событие на каждый элемент
-// blocks.forEach(function (e){
-// 	e.onclick = function() {
-// 		console.log(e.data_value);
+// function showTabs() {
+// 	let data = this.getAttribute('data');
+// 	let tabBody = document.querySelectorAll('.tab-body');
+// 	for (let i = 0; i < tabBody.length; i++) {
+// 		tabBody[i].style.display = 'none';
 // 	}
-// })
+// 	// css .tab-body[data='3']
+// 	// js  '.tab-body[data="' + data +  '"]'
+// 	// document.querySelector('.tab-body[data="' + data + '"]');
+// 	document.querySelector(`.tab-body[data="${data}"]`).style.display = 'block';
+// }
 
-//this
-function one(){
-	console.log(111);
-	//console.log(this);
-	this.style.backgroundColor = 'tomato'
+// ДЗ - оптимизировать код
+let tab = document.querySelectorAll('.tab');
+let tabBody = document.querySelectorAll('.tab-body');
+
+init();
+
+tab.forEach(function(e) {
+	e.onclick = showTabs;
+});
+
+function init(a = 1) {
+	console.log(`a = ${a}`)
+	for(let i = a; i < tabBody.length; i++) {
+		tabBody[i].style.display = 'none';
+	}
+};
+
+function showTabs() {
+	let data = this.getAttribute('data');
+	init(0);
+	document.querySelector(`.tab-body[data="${data}"]`).style.display = 'block';
 }
+
