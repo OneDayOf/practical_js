@@ -1,11 +1,16 @@
 document.querySelector('.push').onclick = function() {
+<<<<<<< HEAD
 	console.clear();
+=======
+
+>>>>>>> main
 	//данные из type = radio
 	// console.log(document.querySelector('.radio-input[checked="checked"]').value);
 
 	let radio = document.querySelectorAll('.radio-input');
 	//radio[2].hidden = true;
 	for (let i = 0; i < radio.length; i++) {
+<<<<<<< HEAD
 		if(radio[i].checked) { //Если у элемента есть атрибут checked, то выводим его значение в консоль
 			console.log(radio[i].value)
 		}
@@ -27,3 +32,10 @@ document.querySelector('.push').onclick = function() {
 		
 }
 }
+=======
+		if(radio[i].checked) {
+			console.log(radio[i].value)
+		}
+	}
+}
+>>>>>>> main
