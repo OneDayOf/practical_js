@@ -31,9 +31,7 @@ let tabBody = document.querySelectorAll('.tab-body');
 
 init();
 
-tab.forEach(function(e) {
-	e.onclick = showTabs;
-});
+tab.forEach((e) => {e.onclick = showTabs;});
 
 function init(a = 1) {
 	for(let i = a; i < tabBody.length; i++) {
