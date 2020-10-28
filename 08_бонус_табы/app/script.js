@@ -36,7 +36,6 @@ tab.forEach(function(e) {
 });
 
 function init(a = 1) {
-	console.log(`a = ${a}`)
 	for(let i = a; i < tabBody.length; i++) {
 		tabBody[i].style.display = 'none';
 	}
