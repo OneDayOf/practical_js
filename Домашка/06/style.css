@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #84ad8d;
+	font-size: 18px;
+}
+
+section {
+	width: 90%;
+	margin: 20px auto;
+	padding: 40px 30px;
+	border-bottom: 2px dashed #fff;
+}
+
+button {
+	padding: 10px 10px;
+	border: 2px solid #0000ff;
+	color: #0000ff;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: #ffffff;	
+	margin-right: 20px;
+}
+
+button:hover {
+	border: 2px solid #ffffff;
+	color: #ffffff;
+	background-color: #0000ff;	
+}
+
+input[type="range"] {
+	position: relative;
+	width: 300px
+}
+
+input[type="range"]:after, 
+input[type="range"]:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	color: #ff0000;
+	font-size: 14px;
+}
+
+input[type="range"]:after {
+	content: "48px";
+	position: absolute;
+	top: 14px;
+	right: -30px;
+}
+
+input[type="range"]:before {
+	content: "14px";
+	position: absolute;
+	top: 14px;
+	left: -30px;
+}
+
+.half-l {
+	display: inline-block;
+	width: 30%;
+}
+.half-r {
+	display: inline-block;
+	width: 68%;
+}
+
+.font span {
+	display: inline-block;
+	width: 40px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #0000ff;
+}
+
+.color-l {
+	width: 49%;
+	display: inline-block;
+}
+
+.color-l input[type="range"] {
+	width: 400px;
+	margin: 30px auto;
+}
+
+.color-l input[type="range"]:before {
+	content: "0";
+	position: absolute;
+	top: 14px;
+	left: -30px;
+}
+
+.color-l input[type="range"]:after {
+	content: "255";
+	position: absolute;
+	top: 14px;
+	right: -30px;
+}
+
+.color-r {
+	position: relative;
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+}
+
+.circle {
+	position: absolute;
+	top: -250px;
+	right: 0;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 2px solid #000;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.circle span {
+	line-height: 300px;
+}

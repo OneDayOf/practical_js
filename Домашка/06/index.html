@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Домашка 6</title>
+</head>
+<body>
+	<section>
+		<h2>Выбери цвет фона</h2>
+		<span>Выберите цвет</span> <input type="color" id="color-1"> <button class="apply">Применить</button>
+	</section>
+	<section>
+		<h2>Выбери цвет фона и шрифта</h2>
+		<span>Выбери цвет фона</span> <input type="color" id="color-2">
+		<span>Выбери цвет шрифта</span> <input type="color" id="color-text">
+		<br /><br />
+		<button class="apply">Применить</button><button id="reset">Сбросить</button>
+	</section>
+	<section>
+		<h2>Выбери размер шрифта</h2>
+		<div class="half-l">
+			<input type="range" min=14 max=48 id="font-size">
+			<p class="font">шрифт: <span>20</span> px</p>
+		</div>
+		<div class="half-r">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla esse vel optio expedita ea est officiis porro veritatis neque? Recusandae!</p>
+		</div>
+	</section>
+	<section>
+		<h2>Выбери цвет</h2>
+		<div class="color-l">
+			<input type="range" min=0 max=255 class="rgb">
+			<input type="range" min=0 max=255 class="rgb">
+			<input type="range" min=0 max=255 class="rgb">
+		</div>
+		<div class="color-r">
+			<div class="circle">
+				<span>rgb(255, 255, 255)</span>
+			</div>
+		</div>
+	</section>
+	<script src='script.js'></script>
+</body>
+</html>

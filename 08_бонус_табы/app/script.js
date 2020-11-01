@@ -42,6 +42,7 @@ function init(a = 1) {
 function showTabs() {
 	let data = this.getAttribute('data');
 	init(0);
+
 	document.querySelector(`.tab-body[data="${data}"]`).style.display = 'block';
-}
+};
 
