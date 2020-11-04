@@ -33,7 +33,7 @@ button:hover {
 
 input[type="range"] {
 	position: relative;
-	width: 300px
+	width: 300px;
 }
 
 input[type="range"]:after, 
@@ -77,9 +77,13 @@ input[type="range"]:before {
 	border-bottom: 1px solid #0000ff;
 }
 
+section:last-child {
+	vertical-align: middle;
+}
 .color-l {
 	width: 49%;
 	display: inline-block;
+
 }
 
 .color-l input[type="range"] {
@@ -102,15 +106,13 @@ input[type="range"]:before {
 }
 
 .color-r {
-	position: relative;
 	width: 49%;
 	display: inline-block;
-	text-align: right;
+	text-align: center;
+	float: right;
 }
 
 .circle {
-	position: absolute;
-	top: -250px;
 	right: 0;
 	display: inline-block;
 	width: 300px;
@@ -121,6 +123,7 @@ input[type="range"]:before {
 	vertical-align: middle;
 }
 
-.circle span {
+.circle p {
+	margin: 0;
 	line-height: 300px;
 }
