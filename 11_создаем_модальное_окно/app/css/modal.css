@@ -1,0 +1,24 @@
+.modal-wrap {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0,0 , .3);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal {
+	width: 259px;
+	height: 320px;
+	border: 1px solid black;
+	padding: 10px;
+	background: #fff;
+}
+
+.hide {
+	display: none;
+}
